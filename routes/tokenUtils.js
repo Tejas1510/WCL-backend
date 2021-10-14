@@ -15,7 +15,7 @@ const tokenVerifier = async (token) => {
         }
         return(null);
     }
-    catch{
+    catch(err){
         return(null);
     }
 }
@@ -31,7 +31,7 @@ const applicationTokenVerifier = async (token) => {
         }
         return(null);
     }
-    catch{
+    catch(err){
         return(null);
     }
 }
