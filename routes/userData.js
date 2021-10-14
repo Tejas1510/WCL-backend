@@ -175,7 +175,7 @@ router.get('/get_batchwise_list', async (req, res) => {
     const userData = await User.find({ batch: batch });
     let opArr = [];
     for(let i=0;i<userData.length;i++){
-      opArr.push(userData[i].username);
+      opArr.push([userData[i].username,userData[i].merged_file_id]);
     }
     res.status(200).json(opArr);
   }
