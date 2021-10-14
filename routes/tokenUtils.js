@@ -2,7 +2,7 @@
 const router = require("express").Router();
 const Admin = require("../models/admin");
 const User = require("../models/User");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const tokenVerifier = async (token) => {
